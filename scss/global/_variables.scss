@@ -12,12 +12,12 @@ $color-background: #eee;
 
 $shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 
-$bp-lg: 991px;
+$bp-m-lg: 991px;
 $bp-md: 768px;
 $bp-sm: 450px;
 
-@mixin large{
-    @media screen and (max-width: $bp-lg){
+@mixin medium-large{
+    @media screen and (max-width: $bp-m-lg){
         @content;
     }  
 }

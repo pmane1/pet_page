@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #e67e22;
+  border-radius: 5rem;
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: all 0.3s linear;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #eee;
+  text-transform: capitalize;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.top {
+  background: #fff;
+  padding: 1.1rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+@media screen and (max-width: 991px) {
+  .top {
+    padding: 1.1rem;
+  }
+}
+.top .logo {
+  color: #130f40;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.top .logo i {
+  color: #e67e22;
+}
+
+nav a {
+  color: #666;
+  margin-left: 1.8rem;
+}
+nav a:hover {
+  color: #e67e22;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
+
+.icons {
+  color: #130f40;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.icons .fa-bars {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .icons .fa-bars {
+    display: block;
+  }
+}
+.icons a {
+  color: #130f40;
+}
+.icons .fas {
+  padding-left: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.icons .fas:hover {
+  color: #e67e22;
+}
+
+form {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

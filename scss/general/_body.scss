@@ -1,0 +1,7 @@
+@use '../global/variables' as *;
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: $color-background;
+    text-transform: capitalize;
+}
