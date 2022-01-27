@@ -9,6 +9,8 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
+    top: 0;
+    left: 0;
 
     @include medium-large{
         padding: 1.1rem;
@@ -26,6 +28,7 @@
 }
 
 nav{
+    display: flex;
     
     a{
     color: $color-base;
@@ -34,10 +37,20 @@ nav{
     &:hover{
         color: $color-orange;
     }
+    @include medium{
+        padding: 1rem 0;
+        display: block;
+    }
     }
 
     @include medium{
         display: none;
+        position: absolute;
+        background: $color-white;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        top: 3.7rem;
     }
 }
 
