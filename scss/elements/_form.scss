@@ -1,0 +1,78 @@
+@use '../global/variables' as *;
+@use 'button' as *;
+
+
+.form{
+    position: absolute;
+    top: 5rem;
+    right: 1.3rem;
+    width: 20rem;
+    height: 100px;
+    background: $color-white;
+    display: none;
+    padding: 1.5rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: $shadow;
+
+    h3{
+        color: $color-dark-blue;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding-bottom: .5rem;
+    }
+
+    &-input{
+        width: 100%;
+        padding: .9rem 0;
+        margin: .7rem 0;
+        font-size: .9rem;
+        border: none;
+        border-bottom: $border;
+        border-width: .05rem;
+    }
+// remember me
+    .remember{
+    display: flex;
+    align-items: center;
+    font-size: .85rem;
+    color: $color-base;
+    margin: .6rem 0;
+
+    label{
+        padding-left: .3rem;
+        cursor: pointer;
+    }
+}
+// button
+    .btn{
+        width: 100%;
+        transition: .2s linear;
+        margin-bottom: 1.7rem;
+
+        &::before{
+            width: 0;
+            height: 0;
+        }
+        &:hover{
+            background: $color-dark-blue
+        }
+    }
+
+// links
+    .links{
+        display: flex;
+        justify-content: space-between;
+        font-size: .8rem;
+
+        a{
+        color: $color-orange;
+        &:hover{
+            text-decoration: underline;
+            color: $color-dark-blue;
+        }
+        }
+    }
+}
+
+

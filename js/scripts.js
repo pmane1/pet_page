@@ -10,4 +10,4 @@ menu.addEventListener('click', () => {
     } else {
         nav.style.display = 'none';
     }
-});
+})
