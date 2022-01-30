@@ -1,0 +1,7 @@
+@use '../global/variables' as *;
+
+p{
+    color: $color-base;
+    font-size: .9rem;
+    line-height: 1.9rem;
+}

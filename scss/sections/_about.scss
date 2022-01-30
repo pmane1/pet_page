@@ -1,0 +1,75 @@
+@use '../global/variables' as *;
+
+.description{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .image{
+        flex: 1 1 40rem;
+
+        @include medium{
+            flex: 1;
+        }
+    img{
+        width: 100%;
+    }
+}
+    .content{
+        flex: 1 1 40rem;
+        text-align: center;
+        padding: 0 3rem;
+        @include medium {
+            flex: 1;
+        }
+        a{
+            display: inline-block;
+        }
+    }
+
+    @include medium{
+        flex-direction: column;
+    }
+}
+
+#about{
+    .content{
+        text-align: left;
+        padding: 0;
+    }
+}
+
+#ad{
+    padding: 0;
+
+    .price{
+        font-size: 2.3rem;
+        color: $color-dark-blue;
+        padding: 1.6rem 0;
+
+        @include medium{
+            font-size: 1.9rem;
+        }
+    }
+    .shop-now{
+        margin: 1rem 0;
+        transition: .3s linear;
+        &:hover{
+            transform: rotate(15deg);
+        }
+    }
+}
+
+.cat-food, .dog-food{
+
+    h2{
+    @include medium-large{
+        font-size: 1.9rem;
+    }
+}
+}
+.cat-food{
+    @include medium{
+        flex-direction: column-reverse;
+    }
+}

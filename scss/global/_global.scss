@@ -7,11 +7,14 @@
 html{
     font-size: $size-base;
     overflow-x: hidden;
+    color: $color-base;
+
+    // scroll !
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
 
     &::-webkit-scrollbar{
-    width: 1rem;
+    width: .6rem;
     }
     &::-webkit-scrollbar-track{
         background: transparent;

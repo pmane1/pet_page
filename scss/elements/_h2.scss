@@ -1,0 +1,13 @@
+@use '../global/variables' as *;
+
+h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 2.9rem;
+    margin-bottom: 1.15rem;
+    color: $color-dark-blue;
+
+    span{
+        color: $color-orange;
+    }
+}
