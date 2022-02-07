@@ -427,4 +427,72 @@ header img {
   }
 }
 
+#shop h2 {
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
+.product-box {
+  overflow: hidden;
+  position: relative;
+}
+.product-box:hover .sticks {
+  transform: translateX(0rem);
+}
+.product-box .image {
+  width: 100%;
+  overflow: hidden;
+}
+.product-box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s linear;
+}
+.product-box .image img:hover {
+  transform: scale(1.1);
+}
+.product-box .sticks {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  transform: translateX(5rem);
+  z-index: 10;
+  transition: 0.3s linear;
+}
+.product-box .sticks .fas {
+  background: #fff;
+  display: block;
+  font-size: 1.1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #130f40;
+  transition: 0.3s linear;
+}
+.product-box .sticks .fas:hover {
+  background: #e67e22;
+}
+.product-box .content {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.product-box .content h3 {
+  font-size: 1.2rem;
+  color: #130f40;
+  font-weight: 700;
+}
+.product-box .content p {
+  font-size: 1.1rem;
+  color: #e67e22;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -35,10 +35,10 @@ $bp-sm: 450px;
     }  
 }
 
-@mixin grid($val) {
+@mixin grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1rem;
 }
 
 // other variables inside individual files
