@@ -1,0 +1,63 @@
+@use '../elements/' as *;
+@use '../global/' as *;
+
+#plans{
+
+    .product-box{
+        width: 100%;
+        background-color: $color-gray;
+        padding: 1rem;
+        border-radius: .3rem;
+
+    // start
+        .start{
+            text-align: center;
+            font-weight: 700;
+            
+            h3{
+                font-size: 1rem;
+                color: $color-orange;
+                margin-bottom: .9rem;
+            }
+            h4{
+                font-size: 1.9rem;
+                color: $color-dark-blue;
+            }
+        }
+    // icon
+        .icon{
+            font-size: 2.7rem;
+            margin: 2rem 0;
+            }
+        i{
+            color: $color-orange;
+        }
+    // list
+        .list{
+            p{
+                font-size: .8rem;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .value{
+            color: $color-dark-blue;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            span{
+                font-size: 2.7rem;
+            }
+        }
+
+        .btn{
+            right: 1rem;
+            bottom: 0rem;
+            position: absolute;
+            padding: .6rem .7rem;
+            font-size: .9rem;
+            background-color: $color-white;
+        }
+    }
+}

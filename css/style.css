@@ -148,6 +148,7 @@ h2 {
   line-height: 2.9rem;
   margin-bottom: 1.15rem;
   color: #130f40;
+  text-align: center;
 }
 h2 span {
   color: #e67e22;
@@ -383,6 +384,9 @@ header img {
 .description .content a {
   display: inline-block;
 }
+.description .content h2 {
+  text-align: left;
+}
 @media screen and (max-width: 768px) {
   .description {
     flex-direction: column;
@@ -428,7 +432,6 @@ header img {
 }
 
 #shop h2 {
-  text-align: center;
   margin-bottom: 1.4rem;
 }
 
@@ -495,14 +498,12 @@ header img {
   color: #e67e22;
 }
 
-#services h2 {
-  text-align: center;
-}
 #services .product-box {
   padding: 2.5rem;
   text-align: center;
   background: #eee;
   border-radius: 33% 67% 70% 30%/30% 30% 70% 70%;
+  transition: all 0.3s ease-in;
 }
 #services .product-box:nth-child(even) {
   border-radius: 79% 21% 81% 19%/58% 93% 7% 42%;
@@ -517,13 +518,65 @@ header img {
 }
 #services .product-box i {
   background: #e67e22;
-  width: 4vh;
-  height: 4vh;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  line-height: 4vh;
+  line-height: 60px;
   color: #fff;
   font-size: 1.6rem;
   margin-bottom: 1rem;
+}
+#services .product-box:hover {
+  border-radius: 0;
+}
+
+#plans .product-box {
+  width: 100%;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+#plans .product-box .start {
+  text-align: center;
+  font-weight: 700;
+}
+#plans .product-box .start h3 {
+  font-size: 1rem;
+  color: #e67e22;
+  margin-bottom: 0.9rem;
+}
+#plans .product-box .start h4 {
+  font-size: 1.9rem;
+  color: #130f40;
+}
+#plans .product-box .icon {
+  font-size: 2.7rem;
+  margin: 2rem 0;
+}
+#plans .product-box i {
+  color: #e67e22;
+}
+#plans .product-box .list p {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+#plans .product-box .value {
+  color: #130f40;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+#plans .product-box .value span {
+  font-size: 2.7rem;
+}
+#plans .product-box .btn {
+  right: 1rem;
+  bottom: 0rem;
+  position: absolute;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.9rem;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

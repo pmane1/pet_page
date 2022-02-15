@@ -25,6 +25,9 @@
         a{
             display: inline-block;
         }
+        h2{
+            text-align: left;
+        }
     }
 
     @include medium{
