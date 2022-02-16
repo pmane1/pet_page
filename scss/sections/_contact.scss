@@ -1,0 +1,65 @@
+@use '../global/' as *;
+
+#contact{
+    padding: 1.5rem 0;
+
+// contact
+    .contact{
+        display: flex;
+        gap: 1.7rem;
+        align-items: center;
+// left
+        .image{
+            flex: 1 1 40rem;
+            img{
+                width: 100%;
+            }
+        }
+// right
+        .contact-login{
+            flex: 1 1 40rem;
+            padding: 2rem 7%;
+            h2{
+                font-size: 1.7rem;
+                text-align: left;
+            }
+            .contact-form{
+                display: block;
+                
+                .contact-form-item{
+                    display: block;
+                    border: none;
+                    border-bottom: 1px solid $color-dark-blue;
+                    padding: .9rem 0;
+                    margin: 1.1rem 0;
+                    width: 100%;
+                    font-size: .9rem;
+                    font-family: 'Poppins', sans-serif;
+                    resize: none; //!
+                    outline: 0; //!
+                }
+                .btn{
+                    width: 100%;
+                    transition: all .3s linear;
+                    &:hover{
+                        background-color: $color-dark-blue;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@include medium{
+    #contact{
+        padding: 1.5rem 0;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact-login{
+        width: 100%;
+        padding: 0 7%;
+    }
+}
